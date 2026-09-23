@@ -1,0 +1,272 @@
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
+.card img {
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+h1 {
+    margin-right: 15px;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+h3 {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+marquee img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+table img:hover {
+    transform: scale(1.08);
+}
+
+td b {
+    font-size: 16px;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+button {
+    background-color: goldenrod;
+    color: black;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 10px 20px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+    background-color: orange;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+section{
+    margin-top:30px;
+    padding:20px;
+    background-image:radial-gradient(white,orange);
+    color:rgb(251, 16, 16);
+    border-radius:8px;
+}
+section h1{
+    color:rgb(239, 27, 27);
+    margin-bottom:10px;
+}
+section h5{
+    font-weight:normal;
+    margin:5px 0;
+}
+sup{
+    font-size:12px;
+}
+tr:hover td{
+    background:#fafafa;
+}
+
+
+/* =========================================
+   RESPONSIVENESS ONLY
+   ========================================= */
+
+
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+
+    .card {
+        padding: 15px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    table img {
+        width: 160px;
+        height: 160px;
+    }
+
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+    .card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card img {
+        margin-left: 0;
+    }
+
+    h1 {
+        margin-right: 0;
+        font-size: 25px;
+    }
+
+    input {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    marquee img {
+        width: 70px;
+        height: 70px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    table img {
+        width: 130px;
+        height: 130px;
+    }
+
+    td {
+        min-width: 150px;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    td b {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    section {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media screen and (max-width: 480px) {
+
+    .card {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        width: 95%;
+        height: 30px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    marquee img {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    table img {
+        width: 100px;
+        height: 100px;
+    }
+
+    td {
+        min-width: 130px;
+        font-size: 12px;
+    }
+
+    td b {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+}
